@@ -1,0 +1,9 @@
+<%= form_for :feedback, url: { controller: :pages, action: :create} do |f| %>
+    <label>From</label>
+    <%= f.text_field "from" %><br><br>
+    
+    <label>Message</label>
+    <%= f.text_area "message" %><br><br>
+
+    <%= f.submit "Submit" %>
+<% end %>
